@@ -6,6 +6,8 @@ use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\ResponseInterface;
 use AcheiPneus\NewsletterModal\Helper\Data;
+use AcheiPneus\NewsletterModal\Model\Modal;
+use Magento\Framework\App\Request\Http;
 
 /**
  * Apos implementar o controller, rodar no termianl: "
@@ -14,14 +16,19 @@ use AcheiPneus\NewsletterModal\Helper\Data;
 class Index extends Action
 {
     protected $_helper;
+    protected $_modalModel;
+    protected $_request;
 
     public function __construct(
         Context $context,
-        Data $helper
-    )
-    {
+        Modal $modalModel,
+        Data $helper,
+        Http $request
+
+    ) {
         parent::__construct($context);
-        $this->_helper = $helper;
+        $this->_modalModel = $modalModel;
+        $this->_request = $request;
     }
 
     /**
@@ -34,6 +41,12 @@ class Index extends Action
      */
     public function execute()
     {
-        var_dump($this->_helper->getModalDescription);
+        $email = $this->_request->getPostValue('email');
+        if($email){
+            $this->_modalModel->addEmailNewsletter($email);
+        }
+        
+        //teste
+        var_dump($this->_helper->getModalDescription());
     }
 }

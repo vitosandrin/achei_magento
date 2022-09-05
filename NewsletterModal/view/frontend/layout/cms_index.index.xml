@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * Especifica para o magento as rotas que serão acessadas 
+ * com base no nome do arquivo e busca o block com qual vai referenciar
+ * e o arquivo phtml q deve ser executado 
+ */
+-->
+<page xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="AcheiPneus\NewsletterModal\Block\Modal" template="AbraaoMarques_NewsletterModal::modal.phtml" name="newsletter-modal" as="newsletter-modal"/>
+        </referenceContainer>
+    </body>
+</page>

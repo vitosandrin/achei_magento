@@ -1,11 +1,12 @@
 <?php
 
-namespace AcheiPneus\NewsletterModal\Helper;
+namespace AbraaoMarques\NewsletterModal\Helper;
 
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Framework\App\Helper\AbstractHelper;
 
-class Data
+class Data extends AbstractHelper
 {
     const MODULE_PATH = 'acheipneus_newslettermodal/general/';
 
