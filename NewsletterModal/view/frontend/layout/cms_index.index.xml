@@ -11,7 +11,7 @@
 <page xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="AcheiPneus\NewsletterModal\Block\Modal" template="AbraaoMarques_NewsletterModal::modal.phtml" name="newsletter-modal" as="newsletter-modal"/>
+            <block class="AcheiPneus\NewsletterModal\Block\Modal" template="AcheiPneus_NewsletterModal::modal.phtml" name="newsletter-modal" as="newsletter-modal"/>
         </referenceContainer>
     </body>
 </page>

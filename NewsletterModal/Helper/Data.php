@@ -1,6 +1,6 @@
 <?php
 
-namespace AbraaoMarques\NewsletterModal\Helper;
+namespace AcheiPneus\NewsletterModal\Helper;
 
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;

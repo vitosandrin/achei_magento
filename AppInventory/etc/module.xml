@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Módulo responsável por referenciar o arquivo xml que é bsucado 
+ * na pasta app/etc/NonComposerComponentRegistration.php
+ * que registra um novo modulo no config.php
+ * 
+ * APÓS REGISTRAR, RODAR NO TERMINAL:"php bin/magento setup:upgrade"
+ */
+-->
+<config xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="AcheiPneus_AppInventory" setup_version="0.0.1" />
+</config>
